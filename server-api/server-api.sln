@@ -9,6 +9,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hermes.Server.Api.Core", "s
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hermes.Server.Api.Data", "src\Hermes.Server.Api.Data\Hermes.Server.Api.Data.csproj", "{CF3D8356-3AAD-4E6E-8F3B-3BE910598AD0}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{956DF9F2-DC4D-4517-8F5A-186FAC168868}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hermes.Tests.Server.Api.Core", "test\Hermes.Tests.Server.Api.Core\Hermes.Tests.Server.Api.Core.csproj", "{965A7A0E-0B5E-4A7E-9344-D36ACE3D8D69}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hermes.Server.Api", "src\Hermes.Server.Api\Hermes.Server.Api.csproj", "{EF8F24BD-EE34-4871-B0B7-1F56D65CD1CC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +29,14 @@ Global
 		{CF3D8356-3AAD-4E6E-8F3B-3BE910598AD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF3D8356-3AAD-4E6E-8F3B-3BE910598AD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CF3D8356-3AAD-4E6E-8F3B-3BE910598AD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{965A7A0E-0B5E-4A7E-9344-D36ACE3D8D69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{965A7A0E-0B5E-4A7E-9344-D36ACE3D8D69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{965A7A0E-0B5E-4A7E-9344-D36ACE3D8D69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{965A7A0E-0B5E-4A7E-9344-D36ACE3D8D69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF8F24BD-EE34-4871-B0B7-1F56D65CD1CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF8F24BD-EE34-4871-B0B7-1F56D65CD1CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF8F24BD-EE34-4871-B0B7-1F56D65CD1CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF8F24BD-EE34-4871-B0B7-1F56D65CD1CC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -30,6 +44,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{8F808D94-98DD-4FB0-9757-30197CE31B4A} = {46C49738-4853-475C-B269-F36BA22E7067}
 		{CF3D8356-3AAD-4E6E-8F3B-3BE910598AD0} = {46C49738-4853-475C-B269-F36BA22E7067}
+		{965A7A0E-0B5E-4A7E-9344-D36ACE3D8D69} = {956DF9F2-DC4D-4517-8F5A-186FAC168868}
+		{EF8F24BD-EE34-4871-B0B7-1F56D65CD1CC} = {46C49738-4853-475C-B269-F36BA22E7067}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {30CDE306-1315-4700-96DC-322A7DE5C306}

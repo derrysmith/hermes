@@ -14,7 +14,7 @@ jobs:
         runs-on: ubuntu-latest
         environment: dev
         env:
-          IMAGE_NAME: us-west1-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/server-api
+          IMAGE_NAME: us-west1-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/hermes/server-api
         steps:
 
         - name: Login

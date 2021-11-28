@@ -31,7 +31,9 @@ jobs:
         - name: build docker image
           run: docker build -t $IMAGE_NAME ./server-api
         - name: push docker image
-          run: gcloud run deploy ${{ secrets.GCP_PROJECT_ID }} --image $IMAGE_NAME --region us-west1 --platform managed
+          run: docker push $IMAGE_NAME
+        - name: deploy docker image
+          run: gcloud run deploy server-api --image $IMAGE_NAME --region us-west1 --platform managed
         # - name: Login
         #   uses: google-github-actions/setup-gcloud@master
         #   with:

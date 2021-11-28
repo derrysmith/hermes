@@ -16,6 +16,56 @@ A monorepository containing the applications, services, and libraries that make 
 | derrysmith-hermes-sbx | derrysmith-hermes-sbx-19750430 |
 
 
+## dev (integrated development environment)
+
+kiira-health-dev
+
+| service | image |
+| :------ | :---- |
+| admin-portal | us-west1-docker.pkg.dev/kiira-health-dev/admin-portal |
+| admin-portal-api | us-west1-docker.pkg.dev/kiira-health-dev/admin-portal-api |
+| kiira-io | us-west1-docker.pkg.dev/kiira-health-dev/kiira-io |
+| identity-api | us-west1-docker.pkg.dev/kiira-health-dev/identity-api |
+| identity-cli | us-west1-docker.pkg.dev/kiira-health-dev/identity-cli |
+| platform-api | us-west1-docker.pkg.dev/kiira-health-dev/platform-cli |
+
+us-west1-docker.pkg.dev/derrysmith-hermes-dev-19750430/hermes/server-api
+### services
+
+- admin-portal-api
+- admin-portal-web
+- 
+- kiira-io
+- kiira-io-api
+- 
+- identity-api
+- platform-api
+- payments-app
+
+- kiira/services/identity
+- kiira/services/platform
+- kiira/services/payments
+
+## sbx (pre-prod environment for smoke testing and demos)
+
+kiira-health-sbx
+
+## prd (production environment)
+
+kiira-health-prd
+
+derrysmith/hermes/server-api:local
+derrysmith/hermes/server-api:latest
+derrysmith/hermes/server-api:sandbox
+
+
+kiira-health/kiira/admin-portal-web
+
+kiira-health/kiira/service-identity:latest
+kiira-health/kiira/service-platform:latest
+kiira-health/kiira/service-payments:latest
+kiira-health/kiira/service-commerce:latest
+
 `derrysmith/hermes/server-api`
 
 `derrysmith/hermes/client-web`

@@ -5,6 +5,7 @@ on: # only run this action when a pr is merged to a feature or hot-fix branch
     branches:
       - 'main'
     paths:
+      - '.github/workflows/server-api*'
       - 'server-api/**'
       - '!server-api/**/*.md'
 
@@ -14,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       IMAGE_NAME: us-west1-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/hermes/server-api
-    environment: dev
+    environment: production
     steps:
       - name: setup gcloud
         uses: google-github-actions/setup-gcloud@master

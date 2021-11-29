@@ -1,7 +1,7 @@
 # hermes
 
 <!-- badges -->
-![server-api workflow](https://github.com/derrysmith/hermes/actions/workflows/deploy-server-api.yml/badge.svg?branch=main)
+![server-api workflow](https://github.com/derrysmith/hermes/actions/workflows/server-api-gcr-deploy-dev.yml/badge.svg?branch=main)
 
 ## github.com/derrysmith/hermes - code
 

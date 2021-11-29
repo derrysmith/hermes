@@ -1,4 +1,4 @@
-name: deploy hermes rest api to google cloud run
+name: 'server-api: deploy'
 
 on: # only run this action when a pr is merged to a feature or hot-fix branch
   push:
@@ -6,6 +6,7 @@ on: # only run this action when a pr is merged to a feature or hot-fix branch
       - 'feature/**'
       - 'hot-fix/**'
     paths:
+      - '.github/workflows/server-api*'
       - 'server-api/**'
       - '!server-api/**/*.md'
 

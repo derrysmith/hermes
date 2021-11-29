@@ -5,15 +5,25 @@ VisualStudioVersion = 16.0.31410.357
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{46C49738-4853-475C-B269-F36BA22E7067}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hermes.Server.Api.Core", "src\Hermes.Server.Api.Core\Hermes.Server.Api.Core.csproj", "{8F808D94-98DD-4FB0-9757-30197CE31B4A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hermes.Server.Api.Core", "src\Hermes.Server.Api.Core\Hermes.Server.Api.Core.csproj", "{8F808D94-98DD-4FB0-9757-30197CE31B4A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hermes.Server.Api.Data", "src\Hermes.Server.Api.Data\Hermes.Server.Api.Data.csproj", "{CF3D8356-3AAD-4E6E-8F3B-3BE910598AD0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hermes.Server.Api.Data", "src\Hermes.Server.Api.Data\Hermes.Server.Api.Data.csproj", "{CF3D8356-3AAD-4E6E-8F3B-3BE910598AD0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{956DF9F2-DC4D-4517-8F5A-186FAC168868}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hermes.Tests.Server.Api.Core", "test\Hermes.Tests.Server.Api.Core\Hermes.Tests.Server.Api.Core.csproj", "{965A7A0E-0B5E-4A7E-9344-D36ACE3D8D69}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hermes.Tests.Server.Api.Core", "test\Hermes.Tests.Server.Api.Core\Hermes.Tests.Server.Api.Core.csproj", "{965A7A0E-0B5E-4A7E-9344-D36ACE3D8D69}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hermes.Server.Api", "src\Hermes.Server.Api\Hermes.Server.Api.csproj", "{EF8F24BD-EE34-4871-B0B7-1F56D65CD1CC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hermes.Server.Api", "src\Hermes.Server.Api\Hermes.Server.Api.csproj", "{EF8F24BD-EE34-4871-B0B7-1F56D65CD1CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hermes.Server.Api.Core.Games", "src\Hermes.Server.Api.Core.Games\Hermes.Server.Api.Core.Games.csproj", "{2EFAC245-A82A-41DB-9259-53685D60C1AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hermes.Tests.Server.Api.Core.Games", "test\Hermes.Tests.Server.Api.Core.Games\Hermes.Tests.Server.Api.Core.Games.csproj", "{15047EF6-8DF6-4E30-A385-6AE18B8607CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hermes.Server.Api.Core.Words", "src\Hermes.Server.Api.Core.Words\Hermes.Server.Api.Core.Words.csproj", "{B1EFFED3-D8C8-4FE7-968A-8271ADAEC9DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hermes.Tests.Server.Api.Core.Words", "test\Hermes.Tests.Server.Api.Core.Words\Hermes.Tests.Server.Api.Core.Words.csproj", "{6FD77AD3-69E4-4AB1-8F0F-0C12B3C13553}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hermes.Server.Api.Infrastructure.Persistence", "src\Hermes.Server.Api.Infrastructure.Persistence\Hermes.Server.Api.Infrastructure.Persistence.csproj", "{E5F10121-EF5F-430D-9AA1-0335E38EBC11}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,6 +47,26 @@ Global
 		{EF8F24BD-EE34-4871-B0B7-1F56D65CD1CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EF8F24BD-EE34-4871-B0B7-1F56D65CD1CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EF8F24BD-EE34-4871-B0B7-1F56D65CD1CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2EFAC245-A82A-41DB-9259-53685D60C1AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EFAC245-A82A-41DB-9259-53685D60C1AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EFAC245-A82A-41DB-9259-53685D60C1AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EFAC245-A82A-41DB-9259-53685D60C1AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15047EF6-8DF6-4E30-A385-6AE18B8607CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15047EF6-8DF6-4E30-A385-6AE18B8607CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15047EF6-8DF6-4E30-A385-6AE18B8607CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15047EF6-8DF6-4E30-A385-6AE18B8607CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1EFFED3-D8C8-4FE7-968A-8271ADAEC9DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1EFFED3-D8C8-4FE7-968A-8271ADAEC9DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1EFFED3-D8C8-4FE7-968A-8271ADAEC9DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1EFFED3-D8C8-4FE7-968A-8271ADAEC9DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FD77AD3-69E4-4AB1-8F0F-0C12B3C13553}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FD77AD3-69E4-4AB1-8F0F-0C12B3C13553}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FD77AD3-69E4-4AB1-8F0F-0C12B3C13553}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FD77AD3-69E4-4AB1-8F0F-0C12B3C13553}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5F10121-EF5F-430D-9AA1-0335E38EBC11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5F10121-EF5F-430D-9AA1-0335E38EBC11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5F10121-EF5F-430D-9AA1-0335E38EBC11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5F10121-EF5F-430D-9AA1-0335E38EBC11}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -46,6 +76,11 @@ Global
 		{CF3D8356-3AAD-4E6E-8F3B-3BE910598AD0} = {46C49738-4853-475C-B269-F36BA22E7067}
 		{965A7A0E-0B5E-4A7E-9344-D36ACE3D8D69} = {956DF9F2-DC4D-4517-8F5A-186FAC168868}
 		{EF8F24BD-EE34-4871-B0B7-1F56D65CD1CC} = {46C49738-4853-475C-B269-F36BA22E7067}
+		{2EFAC245-A82A-41DB-9259-53685D60C1AF} = {46C49738-4853-475C-B269-F36BA22E7067}
+		{15047EF6-8DF6-4E30-A385-6AE18B8607CE} = {956DF9F2-DC4D-4517-8F5A-186FAC168868}
+		{B1EFFED3-D8C8-4FE7-968A-8271ADAEC9DE} = {46C49738-4853-475C-B269-F36BA22E7067}
+		{6FD77AD3-69E4-4AB1-8F0F-0C12B3C13553} = {956DF9F2-DC4D-4517-8F5A-186FAC168868}
+		{E5F10121-EF5F-430D-9AA1-0335E38EBC11} = {46C49738-4853-475C-B269-F36BA22E7067}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {30CDE306-1315-4700-96DC-322A7DE5C306}

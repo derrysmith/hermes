@@ -31,6 +31,26 @@ A monorepository containing the applications, services, and libraries that make 
 ## github.com/derrysmith/hermes - code
 
 ```
+/-- derrysmith/hermes
+	/-- client-api
+	/-- client-web
+
+	/-- mobile-api
+	/-- mobile-app
+
+	/-- server-api
+		/-- src
+			/-- Hermes.Server.Api
+
+			/-- Hermes.Server.Api.Core.Games
+			/-- Hermes.Server.Api.Core.Words
+
+			/-- Hermes.Server.Api.Data.FileIO
+			/-- Hermes.Server.Api.Data.Sqlite
+		/-- words
+			/-- anagrams
+		|-- server-api.sln
+	/-- server-hub
 /-- .github
 	/-- workflows
 /-- mobile-app
@@ -50,19 +70,6 @@ A monorepository containing the applications, services, and libraries that make 
 	|-- hotfix-0124/server-api/defect-desc
 ```
 
-
-## dev (integrated development environment)
-
-kiira-health-dev
-
-| service | image |
-| :------ | :---- |
-| admin-portal | us-west1-docker.pkg.dev/kiira-health-dev/admin-portal |
-| admin-portal-api | us-west1-docker.pkg.dev/kiira-health-dev/admin-portal-api |
-| kiira-io | us-west1-docker.pkg.dev/kiira-health-dev/kiira-io |
-| identity-api | us-west1-docker.pkg.dev/kiira-health-dev/identity-api |
-| identity-cli | us-west1-docker.pkg.dev/kiira-health-dev/identity-cli |
-| platform-api | us-west1-docker.pkg.dev/kiira-health-dev/platform-cli |
 
 us-west1-docker.pkg.dev/derrysmith-hermes-dev-19750430/hermes/server-api
 ### services

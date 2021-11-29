@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Hermes.Server.Api.Core.Games\Hermes.Server.Api.Core.Games.csproj" />
+    <ProjectReference Include="..\Hermes.Server.Api.Core.Words\Hermes.Server.Api.Core.Words.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Resources\DictionaryProvider.Designer.cs">
+      <DependentUpon>DictionaryProvider.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Resources\DictionaryProvider.resx">
+      <LastGenOutput>DictionaryProvider.Designer.cs</LastGenOutput>
+      <Generator>ResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

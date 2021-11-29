@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       IMAGE_NAME: us-west1-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/hermes/server-api
-    environment: development
+    environment: dev
     steps:
       - name: setup gcloud
         uses: google-github-actions/setup-gcloud@master

@@ -37,9 +37,25 @@
 
 ## github.com/derrysmith/hermes - branches
 
+- cut feature branch from `main`
+- cut per-developer branch from feature branch
+  - if feature requires multiple work branches, cut subsequent branches from feature branch
+- merge per-developer feature branch(es) into feature branch
+- on pr merge into feature branch, deploy to ci/dev environment
+- perform qa on ci/dev environment
+- pr/merge feature branch into `main`
+- on pr merge into `main` branch, deploy to prod environment
+
 ```
 |-- main
-	|-- [issue-number]/[application-name]/[feature-description]
-	|-- issues-0123/server-api/add-json-file-provider
-	|-- issues-0124/server-api/fix-anagrams-logic
+	|-- feature/[issue-number]/[description]
+		|-- feature/[issue-number]/[description]/[developer-name]
+	|-- hot-fix/[issue-number]/[description]
+		|-- hot-fix/[issue-number]/[description]/[developer-name]
+
+	|-- feature/123/add-json-file-provider
+		|-- feature/123/add-json-file-provider/bootsy-collins
+		|-- feature/123/add-json-file-provider/george-clinton
+	|-- hot-fix/456/anagrams-returns-duplicates
+		|-- hot-fix/456/anagrams-returns-duplicates/james-brown
 ```

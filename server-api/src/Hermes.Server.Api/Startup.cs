@@ -1,8 +1,9 @@
 namespace Hermes.Server.Api
 {
-	using Hermes.Server.Api.Core;
-	using Hermes.Server.Api.Core.Anagrams;
-	using Hermes.Server.Api.Data.FileIO;
+	using Hermes.Server.Api.Anagrams;
+
+	using Hermes.Server.Api.Infrastructure.Persistence.Words;
+	using Hermes.Server.Api.Infrastructure.Persistence.Words.FileIO;
 
 	using Microsoft.AspNetCore.Builder;
 	using Microsoft.AspNetCore.Hosting;
@@ -10,9 +11,6 @@ namespace Hermes.Server.Api
 	using Microsoft.Extensions.DependencyInjection;
 	using Microsoft.Extensions.Hosting;
 	using Microsoft.OpenApi.Models;
-	
-	using System.Threading;
-	using System.Threading.Tasks;
 
 	public class Startup
 	{
@@ -34,16 +32,14 @@ namespace Hermes.Server.Api
 				});
 			});
 
-			// Hermes.Server.Api.Core
-			services.AddSingleton<IDictionaryProviderFactory, TextFileDictionaryProviderFactory>();
-			services.AddSingleton<IDictionaryProvider>(x =>
+			// Hermes.Server.Api.Core.Words
+			services.ConfigureDictionaryProvider(options =>
 			{
-				return x.GetRequiredService<IDictionaryProviderFactory>()
-					.Create(Thread.CurrentThread.CurrentCulture.Name);
+				options.AddTextFile();
 			});
 
-			// Hermes.Server.Api.Core.Anagrams
-			services.AddSingleton<IAnagramsProvider, AnagramsProvider>();
+			// Hermes.Server.Api.Core.Words.Anagrams
+			services.AddAnagrams();
 
 			services.AddControllers();
 			services.AddSwaggerGen(c =>

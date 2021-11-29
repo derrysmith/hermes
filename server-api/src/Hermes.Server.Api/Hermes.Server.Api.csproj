@@ -13,8 +13,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Hermes.Server.Api.Core\Hermes.Server.Api.Core.csproj" />
-    <ProjectReference Include="..\Hermes.Server.Api.Data\Hermes.Server.Api.Data.csproj" />
+    <ProjectReference Include="..\Hermes.Server.Api.Core.Games\Hermes.Server.Api.Core.Games.csproj" />
+    <ProjectReference Include="..\Hermes.Server.Api.Core.Words\Hermes.Server.Api.Core.Words.csproj" />
+    <ProjectReference Include="..\Hermes.Server.Api.Infrastructure.Persistence\Hermes.Server.Api.Infrastructure.Persistence.csproj" />
   </ItemGroup>
 
 </Project>

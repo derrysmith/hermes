@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Hermes.Server.Api.Core.Games\Hermes.Server.Api.Core.Games.csproj" />
     <ProjectReference Include="..\Hermes.Server.Api.Core.Words\Hermes.Server.Api.Core.Words.csproj" />
   </ItemGroup>

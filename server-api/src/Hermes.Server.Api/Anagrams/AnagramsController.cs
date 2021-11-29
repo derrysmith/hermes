@@ -1,6 +1,6 @@
 ﻿namespace Hermes.Server.Api.Anagrams
 {
-	using Hermes.Server.Api.Core.Anagrams;
+	using Hermes.Server.Api.Core.Words.Anagrams;
 
 	using Microsoft.AspNetCore.Http;
 	using Microsoft.AspNetCore.Mvc;

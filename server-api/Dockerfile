@@ -10,12 +10,19 @@ FROM mcr.microsoft.com/dotnet/sdk:5.0 AS compile
 
 ## copy solution and project files to container, restore nuget packages
 WORKDIR /source
-COPY ["server-api.sln", "server-api.sln"]
-COPY ["src/Hermes.Server.Api/Hermes.Server.Api.csproj", "src/Hermes.Server.Api/"]
-COPY ["src/Hermes.Server.Api.Core/Hermes.Server.Api.Core.csproj", "src/Hermes.Server.Api.Core/"]
-COPY ["src/Hermes.Server.Api.Data/Hermes.Server.Api.Data.csproj", "src/Hermes.Server.Api.Data/"]
-COPY ["test/Hermes.Tests.Server.Api.Core/Hermes.Tests.Server.Api.Core.csproj", "test/Hermes.Tests.Server.Api.Core/"]
-RUN dotnet restore "server-api.sln"
+
+### solution
+COPY ./*.sln ./
+
+### copy src projects and move them to their respective folders
+COPY ./src/*/*.csproj ./
+RUN for file in $(ls *.csproj); do mkdir -p src/${file%.*}/ && mv $file src/${file%.*}/; done
+
+### copy test projects and move them to their respective folders
+COPY ./test/*/*.csproj ./
+RUN for file in $(ls *.csproj); do mkdir -p test/${file%.*}/ && mv $file test/${file%.*}/; done
+
+RUN dotnet restore
 
 ## copy remaining files to container, build, test and publish
 COPY . .

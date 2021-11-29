@@ -1,25 +1,8 @@
 # hermes
 
 <!-- badges -->
+![server-api workflow](https://github.com/derrysmith/hermes/actions/workflows/deploy-server-api.yml/badge.svg?branch=main)
 
-A monorepository containing the applications, services, and libraries that make up the __hermes__ product suite. The __hermes__ repository contains:
-- An Single Page Application built with NextJS
-- A mobile hybrid application build with React Native
-- A REST API built with ASP.NET Core.
-
-## GCP
-
-| project name | project id |
-| :----------- | :--------- |
-| derrysmith-hermes-prd | derrysmith-hermes-prd-19750430 |
-| derrysmith-hermes-dev | derrysmith-hermes-dev-19750430 |
-| derrysmith-hermes-sbx | derrysmith-hermes-sbx-19750430 |
-
-```
-|-- main
-	|-- ci
-		|-- TECH-123/admin-portal/feature-description
-```
 
 - merge `main` to `ci`
 - create feature branch `JIRA-123/app-name/feature-description` from `ci`
@@ -45,8 +28,8 @@ A monorepository containing the applications, services, and libraries that make 
 			/-- Hermes.Server.Api.Core.Games
 			/-- Hermes.Server.Api.Core.Words
 
-			/-- Hermes.Server.Api.Data.FileIO
-			/-- Hermes.Server.Api.Data.Sqlite
+			/-- Hermes.Server.Api.Infrasturcture.Messaging
+			/-- Hermes.Server.Api.Infrastructure.Persistence
 		/-- words
 			/-- anagrams
 		|-- server-api.sln

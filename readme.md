@@ -15,6 +15,41 @@ A monorepository containing the applications, services, and libraries that make 
 | derrysmith-hermes-dev | derrysmith-hermes-dev-19750430 |
 | derrysmith-hermes-sbx | derrysmith-hermes-sbx-19750430 |
 
+```
+|-- main
+	|-- ci
+		|-- TECH-123/admin-portal/feature-description
+```
+
+- merge `main` to `ci`
+- create feature branch `JIRA-123/app-name/feature-description` from `ci`
+- pull request feature branch to `ci`
+- deploy `ci` branch to integrated environment
+- do QA testing on integrated environment
+- merge `ci` to `main`
+
+## github.com/derrysmith/hermes - code
+
+```
+/-- .github
+	/-- workflows
+/-- mobile-app
+	/-- src
+/-- server-api
+	/-- src
+|-- .gitattributes
+|-- .gitignore
+|-- readme.md
+```
+
+## github.com/derrysmith/hermes - branches
+
+```
+|-- main
+	|-- issues-0123/server-api/feature-name
+	|-- hotfix-0124/server-api/defect-desc
+```
+
 
 ## dev (integrated development environment)
 

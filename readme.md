@@ -49,13 +49,13 @@
 ```
 |-- main
 	|-- feature/[issue-number]/[description]
-		|-- feature/[issue-number]/[description]/[developer-name]
+		|-- [developer-name]/feature/[issue-number]/[description]
 	|-- hot-fix/[issue-number]/[description]
-		|-- hot-fix/[issue-number]/[description]/[developer-name]
+		|-- [developer-name]/hot-fix/[issue-number]/[description]
 
 	|-- feature/123/add-json-file-provider
-		|-- feature/123/add-json-file-provider/bootsy-collins
-		|-- feature/123/add-json-file-provider/george-clinton
+		|-- bootsy-collins/feature/123/add-json-file-provider
+		|-- george-clinton/feature/123/add-json-file-provider
 	|-- hot-fix/456/anagrams-returns-duplicates
-		|-- hot-fix/456/anagrams-returns-duplicates/james-brown
+		|-- james-brown/hot-fix/456/anagrams-returns-duplicates
 ```

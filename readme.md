@@ -23,7 +23,6 @@
 			/-- Hermes.Server.Api.Infrasturcture.Messaging
 			/-- Hermes.Server.Api.Infrastructure.Persistence
 		|-- server-api.sln
-	/-- server-hub
 /-- .github
 	/-- workflows
 /-- mobile-app

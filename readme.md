@@ -3,6 +3,8 @@
 <!-- badges -->
 ![server-api workflow](https://github.com/derrysmith/hermes/actions/workflows/server-api-gcr-deploy-dev.yml/badge.svg?branch=main)
 
+> Short description about the repository and what it contains.
+
 ## github.com/derrysmith/hermes - code
 
 ```
